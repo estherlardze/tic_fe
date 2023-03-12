@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { Error, Login, Logout, Privacy, Settings, Signup, Terms } from './components/imports';
 
