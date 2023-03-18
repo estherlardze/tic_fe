@@ -1,10 +1,10 @@
 import React from 'react';
-import image from '../../../assets/avatar.png';
+import image from '../../../assets/avatar1.jpg';
 
 function Chats() {
   return (
     <div className='sidebar__chats'>
-      <div className="sidebar--chat">
+      <article className="sidebar--chat">
         <div className="sidebar--profile">
            <img src={image} alt="" />
         </div>
@@ -12,9 +12,13 @@ function Chats() {
            <span>Esther</span>
            <p>Hello</p>
         </div>
-      </div>
+        <div className="new__chat">
+         <span className='chat__time'>1:02 pm</span>
+         <p className='chat__counts'>2</p>
+        </div>
+      </article>
       
-      <div className="sidebar--chat">
+      <article className="sidebar--chat">
         <div className="sidebar--profile">
            <img src={image} alt="" />
         </div>
@@ -22,8 +26,9 @@ function Chats() {
         <span>Esther</span>
            <p>Hello</p>
         </div>
-      </div>
-      <div className="sidebar--chat">
+      </article>
+
+      <article className="sidebar--chat">
         <div className="sidebar--profile">
            <img src={image} alt="" />
         </div>
@@ -31,8 +36,9 @@ function Chats() {
         <span>Esther</span>
            <p>Hello</p>
         </div>
-      </div>
-      <div className="sidebar--chat">
+      </article>
+
+      <article className="sidebar--chat">
         <div className="sidebar--profile">
            <img src={image} alt="" />
         </div>
@@ -40,8 +46,9 @@ function Chats() {
         <span>Esther</span>
            <p>Hello</p>
         </div>
-      </div>
-      <div className="sidebar--chat">
+      </article>
+
+      <article className="sidebar--chat">
         <div className="sidebar--profile">
            <img src={image} alt="" />
         </div>
@@ -49,7 +56,28 @@ function Chats() {
         <span>Esther</span>
            <p>Hello</p>
         </div>
-      </div>
+      </article>
+
+      <article className="sidebar--chat">
+        <div className="sidebar--profile">
+           <img src={image} alt="" />
+        </div>
+        <div className="sidebar--texts">
+        <span>Esther</span>
+           <p>Hello</p>
+        </div>
+      </article>
+
+      <article className="sidebar--chat">
+        <div className="sidebar--profile">
+           <img src={image} alt="" />
+        </div>
+        <div className="sidebar--texts">
+        <span>Esther</span>
+           <p>Hello</p>
+        </div>
+      </article>
+      
     </div>
   )
 }

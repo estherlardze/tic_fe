@@ -1,0 +1,46 @@
+.settings{
+    background-color: white;
+    color: black;
+    box-shadow: var(--box-shadow);
+    width: 17rem;
+    height: 60vh;
+    border: none;
+    border-radius: 1rem;
+    padding: 5px 10px;
+}
+.settings img{
+    width: 40px;
+    height: 40px;
+  border-radius: 50%;
+}
+.profile--settings p{
+    font-size: .8rem;
+}
+
+.profile--settings{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.settings article, .chat--settings{
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(38, 36, 36, .1);
+  border: 1px solid rgb(190, 188, 188);
+}
+.chat--settings p{
+    font-weight: 600;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.settings button{
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+    margin-left: 5px;
+    padding: 10px;
+    width: 97%;
+    border-radius: 10px;
+}

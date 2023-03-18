@@ -8,10 +8,6 @@ function Chatbar() {
     <div className='chatbar'>
    <ChatInfo/>
    <Messages/>
-   <Messages/>
-   <Messages/>
-   <Messages/>
-   <Messages/>
    <Input/>
     </div>
   )

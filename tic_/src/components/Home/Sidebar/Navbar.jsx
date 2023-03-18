@@ -1,16 +1,13 @@
 import React from 'react';
-import image from '../../../assets/avatar.png';
+import image from '../../../assets/avatar3.jpg';
 
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="logo fw-bold">
-        Tic
-      </div>
-        <div className="user">
-          <img src={image} alt="user" className='user__image'/> <span>name</span>
-            <button>Logout</button>
-        </div>
+      <i class="fa-solid fa-message"></i>
+      <i class="fa-solid fa-phone"></i>
+      <i class="fa-solid fa-users"></i>
+          <img src={image} alt="user" className='user__image'/> 
     </div>
   )
 }
