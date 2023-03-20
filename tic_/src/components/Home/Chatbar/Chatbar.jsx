@@ -6,9 +6,9 @@ import Input from './Input';
 function Chatbar() {
   return (
     <div className='chatbar'>
-   <ChatInfo/>
-   <Messages/>
-   <Input/>
+      <ChatInfo/>
+      <Messages/>
+      <Input/>
     </div>
   )
 }
