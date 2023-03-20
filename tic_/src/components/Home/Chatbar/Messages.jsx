@@ -2,16 +2,16 @@ import React from 'react'
 
 function Messages() {
   return (
-    <div >
-      <div className='messages'> 
+    <div className='chat__messages'>
+      <div className='chat__message'> 
           <p>hey there, you good </p>
           <p>yh</p>
       </div>
-      <div className='messages'> 
+      <div className='chat__message'> 
           <p>wassup</p>
           <p>a dey cool</p>
       </div>
-      <div className='messages'> 
+      <div className='chat__message'> 
           <p>messages</p>
           <p>messages</p>
       </div>

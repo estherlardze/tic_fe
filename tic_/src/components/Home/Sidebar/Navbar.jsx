@@ -3,7 +3,7 @@ import image from '../../../assets/avatar3.jpg';
 
 function Navbar() {
   return (
-    <div className="navbar">
+    <div className="navbar top-sticky">
       <i class="fa-solid fa-message"></i>
       <i class="fa-solid fa-phone"></i>
       <i class="fa-solid fa-users"></i>

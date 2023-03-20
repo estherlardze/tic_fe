@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import validateForm from './SignUpValidation';
 import './signup.css';
-import 'font-awesome/css/font-awesome.min.css';
+
 
 
 const Signup = () => {
@@ -10,7 +10,7 @@ const Signup = () => {
   const [isSubmit, setIsSubmit] = useState(false)
   const [formErrors, setFormErrors] = useState({})
 
- const handleChange = (e) =>{
+const handleChange = (e) =>{
    const {name, value} = e.target;
    setFormData({...formData, [name]: value});
  }

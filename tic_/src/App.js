@@ -1,4 +1,7 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './fontawesome-icons/css/all.min.css';
 import {Home, Error, Login, Logout, Privacy, Settings, Signup, Terms } from './components/imports';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 

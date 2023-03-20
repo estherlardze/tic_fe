@@ -9,7 +9,7 @@ function Sidebar() {
       <Navbar/>
       <div className='category'>
          <div className='add-chat'>
-         <h5 className='fw-bold'>Chats</h5>
+         <h4 className='fw-bold'>Chats</h4>
          <i class="fa-solid fa-plus"></i>
          </div>
         <div className="chat--category">
