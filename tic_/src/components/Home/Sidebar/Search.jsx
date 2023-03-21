@@ -14,8 +14,6 @@ function Search(props) {
     return item.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
-  console.log({"Filtered Data" : filteredData});
-
 
   return (
      <div className="search__user">
