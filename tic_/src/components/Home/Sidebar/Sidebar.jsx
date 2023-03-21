@@ -2,23 +2,35 @@ import React from 'react';
 import Navbar from './Navbar';
 import Search from './Search';
 import Chats from './Chats';
+import {AiOutlinePlus} from 'react-icons/ai';
+import Data from './DummyChats';
 
-function Sidebar() {
+
+
+const Sidebar = () => {
+  const chats = Data.map(chat =>{
+    return(
+      <Chats 
+        key = {chat.name}
+        chat = {chat}
+      />
+    )
+  })
   return (
     <div className='sidebar'>
       <Navbar/>
       <div className='category'>
          <div className='add-chat'>
          <h4 className='fw-bold'>Chats</h4>
-         <i class="fa-solid fa-plus"></i>
+         <AiOutlinePlus className='add__chat-icon'/>
          </div>
         <div className="chat--category">
           <p>DIRECT</p>
           <p>GROUPS</p>
         </div>
       </div>
-      <Search/>
-      <Chats/>
+      <Search data={Data}/>
+      {chats}
     </div>
   )
 }

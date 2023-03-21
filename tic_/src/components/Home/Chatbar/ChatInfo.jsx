@@ -1,5 +1,7 @@
 import React from 'react';
-import image from '../../../assets/avatar2.jpg'
+import image from '../../../assets/avatar2.jpg';
+import {FaPhoneAlt} from 'react-icons/fa';
+import {BsThreeDotsVertical} from 'react-icons/bs';
 
 function ChatInfo() {
   return (
@@ -12,8 +14,8 @@ function ChatInfo() {
        </div>
       </div>
       <div className="user--acount">
-      <i class="fa-solid fa-phone"></i>
-      <i class="fa-solid fa-ellipsis"></i>
+      <FaPhoneAlt className='user__icon-phone' />
+      <BsThreeDotsVertical />
       </div>
     </div>
   )

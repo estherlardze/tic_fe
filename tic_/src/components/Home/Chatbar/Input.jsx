@@ -1,14 +1,16 @@
-import React from 'react'
-
+import React from 'react';
+import {BsEmojiSmile} from 'react-icons/bs';
+import {FiPaperclip} from 'react-icons/fi';
+import {HiMicrophone} from 'react-icons/hi';
 function Input() {
   return (
     <div>
       <div className="input-value">
-        <i className="fa-solid fa-face-smile"></i>
-        <input type="text" placeholder='Enter a message'/>
-        <i className="fa-sharp fa-solid fa-paperclip"></i>
+        < BsEmojiSmile className='input__icon-emoji'/>
+        <input type="text" placeholder='&#x20;Enter a message'/>
+         <FiPaperclip className='input__icon-paperclip' />
         <i class="fa-sharp fa-regular fa-paper-plane-top"></i> 
-        <i className="fa-solid fa-microphone"></i>
+        <HiMicrophone className='input__icon-microphone' />
       </div>
     </div>
   )

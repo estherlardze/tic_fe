@@ -2,39 +2,28 @@ import React from 'react';
 import image from '../../../assets/avatar1.jpg';
 
 
-const SidebarChats = ({image, name, text, time, message_counts}) => {
-   return(
-    <article className="sidebar--chat">
+const Chats = (props) => {
+  const currentTime = new Date();
+  const time = currentTime.getHours() + ":" + currentTime.getMinutes() + ":";
+  return (
+     <div className='sidebar__chats'>
+        <article className="sidebar--chat">
       <div className='sidebar__profile'>
         <div className="sidebar__profile-image">
-            <img src={image} alt="image" />
+            <img src={image} alt="profile image" />
         </div>
         <div className="sidebar--texts">
-            <span>{name}</span>
-            <p>{text}</p>
+            <span>{props.chat.name}</span>
+            <p>{props.chat.text}</p>
         </div>
       </div>
 
       <div className="new__chat">
         <span className='chat__time'>{time}</span>
-        <p className='chat__counts'>{message_counts}</p>
+        <p className='chat__counts'>{props.chat.message_counts}</p>
       </div>
 
     </article>
-   );
-}
-
-const Chats = () => {
-
-  return (
-    <div className='sidebar__chats'>
-      <SidebarChats image = {image} name="Esther" text="hello Esther" time="1:20pm" message_counts="2"/>
-      <SidebarChats image={image} name="Esther" text="hello Esther" time="1:20pm" message_counts="2"/>
-      <SidebarChats image={image} name="Esther" text="hello Esther" time="1:20pm" message_counts="2"/>
-      <SidebarChats image={image} name="Esther" text="hello Esther" time="1:20pm" message_counts="2"/>
-      <SidebarChats image={image} name="Esther" text="hello Esther" time="1:20pm" message_counts="2"/>
-      <SidebarChats image={image} name="Esther" text="hello Esther" time="1:20pm" message_counts="2"/>
-      
     </div>
   )
 };

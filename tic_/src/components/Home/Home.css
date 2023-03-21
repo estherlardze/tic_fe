@@ -46,13 +46,21 @@
 
 
 }
-.navbar i{
+.navbar__icon-message,
+.navbar__icon-phone,
+.navbar__icon-people{
   color: var(--color1);
   cursor: pointer;
 }
-.navbar i:first-child{
+.navbar__icon-message:active,
+.navbar__icon-phone:active,
+.navbar__icon-people:active:active{
+    color: #810796;
+}
+.navbar__icon-message{
     color: var(--main-color);
     margin-left: 1rem;
+    font-size: 1.5rem;
 }
 
 .user{
@@ -99,14 +107,14 @@
     align-items: center;
     justify-content: space-between;
 }
-.add-chat i{
+.add__chat-icon{
     background: var(--gradient-bg);
     width: 25px;
     height: 25px;
     border-radius: 50%;
     color: white;
-    font-size: 1rem;
-   display: flex;
+    font-size: .8rem;
+    display: flex;
    justify-content: center;
    align-items: center;
     margin-right: 1rem;
@@ -205,8 +213,13 @@
     box-shadow:var(--box-shadow);
     background-color: white;
 }
-.chat__info i{
+.user__icon-phone,
+.user__icon-dots{
     color: var(--color1);
+}
+
+.user__icon-dots{
+    font-size: 1.5rem;
 }
 .user--profile{
     display: flex;
@@ -274,28 +287,28 @@
     box-shadow: var(--box-shadow);
  
 }
-.input-value i{
+.input__icon-emoji{
     position: absolute;
     bottom: 1rem;
-    font-size: 1.3rem;
-    color: var(--color1);
-    cursor: pointer;
-}
-.input-value i:first-child{
     left: .8rem;
     font-size: 1.5rem;
     bottom: .5rem;
     color: rgb(0, 0, 0, .6);
+    cursor: pointer;
 }
-.input-value i:nth-child(3){
+.input__icon-paperclip{
+    position: absolute;
+    bottom: 1rem;
     left: 2.7rem;
     transform: rotate(-90deg);
     font-size: 1.5rem;
     bottom: 0.5rem;
     color: rgb(0, 0, 0, .6);
+    cursor: pointer;
 }
-.input-value i:last-child{
-  right: 1rem;
+.input__icon-microphone{
+  position: absolute;
+  right: .7rem;
   bottom: 0;
   background: var(--gradient-bg);
   color: white;
