@@ -3,6 +3,7 @@ import image from '../../../assets/avatar1.jpg';
 
 
 const Chats = (props) => {
+  console.log(props)
   const currentTime = new Date();
   const time = currentTime.getHours() + ":" + currentTime.getMinutes() + ":";
   return (

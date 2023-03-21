@@ -8,14 +8,7 @@ import Data from './DummyChats';
 
 
 const Sidebar = () => {
-  const chats = Data.map(chat =>{
-    return(
-      <Chats 
-        key = {chat.name}
-        chat = {chat}
-      />
-    )
-  })
+
   return (
     <div className='sidebar'>
       <Navbar/>
@@ -30,7 +23,11 @@ const Sidebar = () => {
         </div>
       </div>
       <Search data={Data}/>
-      {chats}
+      {/* {
+        Data.map(chat => (
+          <Chats key={chat.name} chat = {chat} />
+        ))
+      } */}
     </div>
   )
 }

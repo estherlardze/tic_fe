@@ -1,4 +1,4 @@
-export default [
+const Data = [
     {
     name : "Esther",
     image: 'avatar1.jpg',
@@ -6,21 +6,21 @@ export default [
     message_counts : '2'
     
     },
-{
-    name : "Tina",
-    image: 'avatar1.jpg',
-    text : 'hello there',
-    message_counts : '2'
-    
-},
-{
-    name : "Jasmine",
-    image: 'avatar1.jpg',
-    text : 'hello there',
-    message_counts : '2'
-    
+    {
+        name : "Tina",
+        image: 'avatar1.jpg',
+        text : 'hello there',
+        message_counts : '2'
+        
     },
-{
+    {
+        name : "Jasmine",
+        image: 'avatar1.jpg',
+        text : 'hello there',
+        message_counts : '2'
+        
+    },
+   {
     name : "Rose",
     image: 'avatar1.jpg',
     text : 'hello there',
@@ -35,3 +35,6 @@ export default [
         
      }
 ]
+
+
+export default Data;
