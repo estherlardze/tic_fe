@@ -1,6 +1,4 @@
 import React from 'react';
-import image from '../../../assets/avatar1.jpg';
-
 
 const Chats = (props) => {
   const currentTime = new Date();
@@ -10,7 +8,8 @@ const Chats = (props) => {
         <article className="sidebar--chat">
       <div className='sidebar__profile'>
         <div className="sidebar__profile-image">
-            <img src={image} alt="profile image" />
+            <img src={props.chat.image ? props.chat.image : 
+              "http://placehold.it/80x80"}/>
         </div>
         <div className="sidebar--texts">
             <span>{props.chat.name}</span>
