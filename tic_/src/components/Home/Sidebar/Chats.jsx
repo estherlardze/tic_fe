@@ -4,6 +4,8 @@ const Chats = (props) => {
   console.log(props)
   const currentTime = new Date();
   const time = currentTime.getHours() + ":" + currentTime.getMinutes() + ":";
+
+
   return (
      <div className='sidebar__chats'>
         <article className="sidebar--chat">

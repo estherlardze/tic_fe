@@ -3,6 +3,7 @@ import Chats from './Chats';
 
 
 function Search(props) {
+  console.log(props)
  
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -10,10 +11,15 @@ function Search(props) {
     setSearchTerm(event.target.value);
   }
 
-  const filteredData = props.data.filter((item) => {
-    return item.name.toLowerCase().includes(searchTerm.toLowerCase());
-  });
+  // const filteredData = props.data.filter((item) => {
+  //   return item.name.toLowerCase().includes(searchTerm.toLowerCase());
+  // });
 
+  const filteredData = Array.isArray(props.data)
+  ? props.data.filter((item) => {
+      return item.name.toLowerCase().includes(searchTerm.toLowerCase());
+    })
+  : [];
 
   return (
      <div className="search__user">
