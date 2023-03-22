@@ -2,19 +2,13 @@ import React from 'react';
 
 const Chats = (props) => {
   const currentTime = new Date();
-<<<<<<< HEAD
   const time = currentTime.getHours() + ":" + currentTime.getMinutes() ;
-=======
-  const time = currentTime.getHours() + ":" + currentTime.getMinutes() + ":";
-
-
->>>>>>> 27ac580a91909263b3995c27bb79c3674de3d90d
   return (
      <div className='sidebar__chats'>
         <article className="sidebar--chat">
       <div className='sidebar__profile'>
         <div className="sidebar__profile-image">
-            <img src={props.data.image ? props.chat.image : 
+            <img src={props.chat.image ? props.chat.image : 
               "http://placehold.it/80x80"} alt=""/>
         </div>
         <div className="sidebar--texts">
