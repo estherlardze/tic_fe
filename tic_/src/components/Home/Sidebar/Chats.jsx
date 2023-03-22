@@ -2,7 +2,13 @@ import React from 'react';
 
 const Chats = (props) => {
   const currentTime = new Date();
+<<<<<<< HEAD
   const time = currentTime.getHours() + ":" + currentTime.getMinutes() ;
+=======
+  const time = currentTime.getHours() + ":" + currentTime.getMinutes() + ":";
+
+
+>>>>>>> 27ac580a91909263b3995c27bb79c3674de3d90d
   return (
      <div className='sidebar__chats'>
         <article className="sidebar--chat">
