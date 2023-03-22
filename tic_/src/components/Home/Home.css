@@ -2,7 +2,7 @@
     --box-shadow : 2px 2px 10px rgb(20, 20, 20, .2);
     --color1: rgb(81, 79, 79);
     --main-color: #810796;
-    --gradient-bg: linear-gradient(to right, #58168a, #b714db )
+    --gradient-bg: linear-gradient(to right, #58168a, #77098f );
 }
 .home--container{
     border-radius: 10px;

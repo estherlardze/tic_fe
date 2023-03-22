@@ -27,7 +27,7 @@ function Search(props) {
 
       {
         filteredData.map((chat) => (
-          <Chats key={Chats.name} chat = { chat } />
+          <Chats key={chat.id} chat = { chat } />
         ))
       }
        </div>
