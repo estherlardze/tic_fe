@@ -12,7 +12,7 @@ const [toggleMenuIcon, settoggleMenuIcon] = useState(false);
     <nav className='landing__navbar' id='home'>
       <div className='landing__navbar-links'>
         <div className='landing__navbar-logo'>
-        <h2 className='fw-bold'>TIC</h2>
+        <h2 className='fw-bold'>tic</h2>
         </div>  
         <div className='landing__navbar-links__container'>
             <p><a href="#home">Home</a></p>
@@ -21,8 +21,8 @@ const [toggleMenuIcon, settoggleMenuIcon] = useState(false);
         </div>
       </div>
      <div className='landing__navbar-signin'>
-     <Link to="/signup" className='sign-up'>{"sign up"}</Link>
-      <Link to="/login" className='button'><button>{"Sign in"}</button></Link>
+     <Link to="/signup" className='sign-up'>Sign up</Link>
+      <Link to="/login" className='button'><button>Sign in</button></Link>
      </div>
      <div className='landing__navbar-menuicon'>
         {toggleMenuIcon ? <RiCloseFill size={27} onClick = {() => settoggleMenuIcon(false)}/> : <RiMenu3Fill size={27} onClick = {() => settoggleMenuIcon(true)}/> }

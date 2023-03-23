@@ -29,10 +29,19 @@
     gap: 20px;
     padding-top: .4rem;
 }
+
 .landing__navbar-signin{
     display: flex;
-    gap: 15px;
+    /* gap: 15px; */
+    flex-direction: row;
+    justify-content: center;
+} 
+
+.sign-up {
+    margin: 0.25rem 0.8rem 0 0;
+    font-weight: 400;
 }
+
 .landing__navbar-links__container a{
     text-decoration: none;
     color: #000;
@@ -45,12 +54,14 @@
  padding-top: .7rem;
 }
 .landing__navbar-signin button{
-     border: none;
-      background: linear-gradient(to bottom, rgb(117, 6, 106), rgb(186, 11, 209));
-      border-radius: .5rem;
-      text-align: center;
-      padding: 5px 10px;
-}
+    border: none;
+    background: linear-gradient(to bottom, rgb(117, 6, 106), rgb(186, 11, 209));
+    border-radius: .5rem;
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 400;
+} 
 .sign-up{
     margin-bottom:15px ;
 }
@@ -107,8 +118,10 @@
     .landing__navbar{
         padding: 0 2rem;
     }
+
+
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 420px){
 	.landing__navbar-menuicon{
         display: flex;
     }
