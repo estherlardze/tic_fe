@@ -5,6 +5,7 @@
     --gradient-bg: linear-gradient(to right, #58168a, #77098f );
 }
 .home--container{
+    margin-top: 4rem;
     border-radius: 10px;
     width: 70vw;
     height: 80vh;
