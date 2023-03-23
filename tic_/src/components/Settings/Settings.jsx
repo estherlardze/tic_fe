@@ -1,6 +1,7 @@
 import React from 'react';
 import './settings.css';
 import image from '../../assets/avatar3.jpg';
+import {Link} from 'react-router-dom';
 
 
 const Settings = () => {
@@ -21,7 +22,10 @@ const Settings = () => {
            <p>Settings</p><hr />
            <p>Support</p>
         </div>
-        <button>Log out</button>
+        <Link to="/">
+      <button> {"Log out"}</button>
+        </Link>
+       
       </section>
     </>
   )

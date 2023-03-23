@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import validateForm from './SignUpValidation';
 import './signup.css';
+import {Link} from 'react-router-dom';
 
 
 
@@ -31,7 +32,7 @@ const handleChange = (e) =>{
   return (
     <>
     {(Object.keys(formErrors).length === 0 && isSubmit) && (<p style={{textAlign: "center"}}>sign in was successful</p>)}
-  <form onSubmit={handleSubmit}> 
+  <form onSubmit={handleSubmit} className="mt-5"> 
     <h2>Sign Up</h2>
 
      <div className="form-group col-md-8">
@@ -66,7 +67,9 @@ const handleChange = (e) =>{
   </div>
   <p style={{color: "red"}}>{formErrors.confirmpassword}</p>
          <button type="submit">Sign up</button>
-         <p className='fw-bold'>Already have an account? <span className='fw-bold'><a href="#">Login here</a></span></p>
+         <Link to="/login" className='fw-bold'>
+            {"Already have an account? Login here"}
+         </Link>
        </form>
     </>
   )

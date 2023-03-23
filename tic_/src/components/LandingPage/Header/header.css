@@ -15,7 +15,7 @@
     transform: rotate(45deg);
     position: absolute;
     left: -4rem;
-    top: 3rem;
+    top: 4rem;
 }
 .landing__header-one h2{
     font-size: 3rem;
@@ -26,12 +26,12 @@
     width: 35px;
     height: 35px;
     left: 2rem;
-    top: -2rem;
+    top: 0rem;
 }
 .two{
     width: 10px;
     height: 10px;
-    left: 2rem;
+    left: 4.5rem;
     top: 1rem;
 }
 .landing__header-one{

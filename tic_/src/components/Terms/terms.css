@@ -1,0 +1,35 @@
+
+.tic__terms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    max-width: 460px;
+    text-align: center;
+    padding: 60px 30px;
+}
+.tic__terms-container{
+  height: 400px;
+  overflow-y: auto;
+}
+.tic__terms p{
+    font-size: 12px;
+}
+.tic__terms-accept__decline button{
+    background-color: rgb(255, 0, 0);
+    padding: 10px 20px;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.tic__terms-accept__decline .btn2{
+    background-color: rgb(33, 32, 32);
+    color: white;
+}
+@media only screen and (max-width: 470px){
+    .tic__terms{
+        margin: 0 20px;
+    }
+}

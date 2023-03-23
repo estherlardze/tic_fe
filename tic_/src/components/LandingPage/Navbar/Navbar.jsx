@@ -1,6 +1,7 @@
 import React , {useState} from 'react';
 import './Navbar.css';
 import {RiMenu3Fill , RiCloseFill} from 'react-icons/ri';
+import {Link} from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -20,8 +21,8 @@ const [toggleMenuIcon, settoggleMenuIcon] = useState(false);
         </div>
       </div>
      <div className='landing__navbar-signin'>
-     <p><a href="#">sign up</a></p>
-    <button type='button'>Sigh in</button>
+     <Link to="/signup" className='sign-up'>{"sign up"}</Link>
+      <Link to="/login" className='button'><button>{"Sign in"}</button></Link>
      </div>
      <div className='landing__navbar-menuicon'>
         {toggleMenuIcon ? <RiCloseFill size={27} onClick = {() => settoggleMenuIcon(false)}/> : <RiMenu3Fill size={27} onClick = {() => settoggleMenuIcon(true)}/> }
@@ -34,8 +35,8 @@ const [toggleMenuIcon, settoggleMenuIcon] = useState(false);
             <p><a href="#hiw">How it Works</a></p>
             </div>
             <div className='landing__navbar-signin__small'>
-             <p><a href="#">sign up</a></p>
-              <button type='button'>Sigh in</button>
+            <Link to="/signup" className='mb-5 text-light text-decoration-none'>{"sign up"}</Link> <br />
+            <Link to="/login" className='landing__navbar-signin__small-button mt-3'>{"Sign in"}</Link>
             </div>
           </div>
            

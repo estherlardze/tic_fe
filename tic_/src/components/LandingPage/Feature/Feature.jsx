@@ -16,8 +16,8 @@ const Feature = () => {
          </article>
          <article>
           < GrSecure className='landing__feature-Icon'/>
-          <h4 className='fw-bold'>Set your password</h4>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, quae. Nesciunt dolorem officia sapiente quasi sunt quia ea inventore magnam.</p>
+          <h4 className='fw-bold'>End-to-end encryption</h4>
+          <p>This means that all information is encrypted using a key that is known only by you and the recipient. Nobody else can to access the content of such messages without having direct access to your device.</p>
          </article>
          <article>
           < MdPrivacyTip className='landing__feature-Icon'/>

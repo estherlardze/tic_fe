@@ -2,6 +2,7 @@ import React, { useEffect, useState }from 'react';
 import validateForm from './LoginValidation';
 import './login.css';
 import image from '../../assets/bg1.jpg';
+import {Link} from 'react-router-dom';
 
 
 const Login = () => {
@@ -59,7 +60,11 @@ const Login = () => {
   <p style={{color: "red"}}>{handleFormErrors.password}</p>
    <button>Login</button>
    <div className="d-flex  justify-content-lg-between">
-     <p className="fw-bold me-2">Don't have an account?</p><span className='fw-bold'>sign up here</span>
+
+   <Link to="/signup" className="fw-bold me-2">
+                  {"Don't have an account? Sign Up"}
+                </Link>
+    
  
    </div>
  </form>

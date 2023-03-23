@@ -1,8 +1,6 @@
-body{
-    margin-top: 3rem;
-}
+
  .image{
-    width: 22vw;
+    width: 100%;
     margin-top: .5rem;
 }
 .welcome--chat{
@@ -29,4 +27,5 @@ body{
 form{
     position: relative;
 }
+
 
