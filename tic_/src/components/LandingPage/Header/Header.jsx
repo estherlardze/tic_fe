@@ -13,7 +13,7 @@ const Header = () => {
           <div className='circle '></div>
       </div>
       <div className="landing__header-two">
-        <div className='landing__header-circle'></div>
+
     
       </div>
     </div>

@@ -1,6 +1,6 @@
 .landing__header{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 1fr;
     padding: 0 0 0 6rem;
     position: relative;
 }

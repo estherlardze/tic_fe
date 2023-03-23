@@ -251,9 +251,6 @@
   padding-top: 2rem;
 }
 .chat__message p{
-    background-color: black;
-    color: white;
-    border: none;
     border-radius: 1rem;
     padding:5px 10px;
     width: fit-content;
@@ -263,11 +260,17 @@
 }
 .chat__message p:nth-child(1){
     left: 2rem;
-    color: black;
+    color: rgb(70, 8, 57);
     background-color: #d2d2f3; 
     border-top-left-radius:0 ;
-    margin-bottom: 2rem;
-   
+    margin-bottom: 2rem; 
+}
+.chat__message p:nth-child(2){
+    right: 2rem;
+    color:white;
+    background: var(--gradient-bg); 
+    border-top-right-radius:0 ;
+    margin-bottom: 2rem; 
 }
 /*input*/
 .input-value input{
