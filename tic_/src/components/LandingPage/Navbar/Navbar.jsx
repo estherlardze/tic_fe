@@ -21,6 +21,7 @@ const [toggleMenuIcon, settoggleMenuIcon] = useState(false);
         </div>
       </div>
      <div className='landing__navbar-signin'>
+
      <Link to="/signup" className='sign-up'>Sign up</Link>
       <Link to="/login" className='button'><button>Sign in</button></Link>
      </div>
