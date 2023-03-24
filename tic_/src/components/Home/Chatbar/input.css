@@ -82,12 +82,22 @@
 
 }
 
+.tic__emoji:hover,
+.input__icon-paperclip:hover,
+.send__message:hover {
+    transform: scale(0.75);
+    font-weight: 800;
+}
+
 
 .input__icon-paperclip {
     font-size: 30px;
     margin-left: 2.5rem;
     color: rgb(0, 0, 0, .6);
     cursor: pointer;
+}
+.input__icon-microphone:hover {
+    transform: scale(1.1)
 }
 
 .send__message {

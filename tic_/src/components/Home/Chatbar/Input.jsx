@@ -29,14 +29,14 @@ function Input() {
   //       <FiPaperclip className='input__icon-paperclip' />
   //       <HiMicrophone className='input__icon-microphone' />
 
-        // <div className="chat-history">
-        // {messages.map((message, index) => (
-        //   <div key={index} className="send__input-message">
-        //     <div className="content">{message.content}</div>
-        //     <div className="timestamp">{message.timestamp.toLocaleString()}</div>
-        //   </div>
-        // ))}
-  //     </div>
+      //   <div className="chat-history">
+      //     {messages.map((message, index) => (
+      //       <div key={index} className="send__input-message">
+      //         <div className="content">{message.content}</div>
+      //         <div className="timestamp">{message.timestamp.toLocaleString()}</div>
+      //       </div>
+      //     ))}
+      // </div>
   //     <div className="message-input">
   //       <input type="text" value={currentMessage} onChange={handleMessageInputChange} placeholder='&#x20;Type a message'/>
   //       <AiOutlineSend onClick={sendMessage} className="send__message"/>
@@ -57,8 +57,16 @@ function Input() {
         <AiOutlineSend onClick={sendMessage} className="send__message"/>
       </div>
 
-      <div className="tic__message-icons">
+      {/* <div className="chat-history">
+          {messages.map((message, index) => (
+            <div key={index} className="send__input-message">
+              <div className="content">{message.content}</div>
+              <div className="timestamp">{message.timestamp.toLocaleString()}</div>
+            </div>
+          ))}
+      </div> */}
 
+      <div className="tic__message-icons">
         <HiMicrophone className='input__icon-microphone' />
       </div>    
     </div>
