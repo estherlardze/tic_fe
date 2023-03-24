@@ -6,7 +6,8 @@ Getting Started
 FrontEnd Technologies- React js, react-icons, html, css, bootstrap
 
 FrontEnd includes a sign up and Login page, Home page, chat page, terms and condition page and error page
-<img src="./homepage.png>
+
+<img src="./homepage.png">
 
 How This App Works
 User Registration: The user needs to create an account and log in .The application stores the user's login details in a secure database.
