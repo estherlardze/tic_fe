@@ -70,7 +70,7 @@ const handleChange = (e) =>{
          <Link to="/login" className='fw-bold'>
             {"Already have an account? Login here"}
          </Link>
-       </form>
+  </form>
     </>
   )
 }

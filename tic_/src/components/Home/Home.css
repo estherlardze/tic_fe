@@ -53,6 +53,14 @@
   color: var(--color1);
   cursor: pointer;
 }
+
+.navbar__icon-message:hover,
+.navbar__icon-phone:hover,
+.navbar__icon-people:hover {
+    transform: scale(0.75);
+    font-weight: 800;
+}
+
 .navbar__icon-message:active,
 .navbar__icon-phone:active,
 .navbar__icon-people:active:active{
